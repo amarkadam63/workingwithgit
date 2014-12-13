@@ -121,3 +121,10 @@ To https://github.com/kapilsharma/workingwithgit.git
 ```
 
 Great, your readme.md file sent on the server. Please go to github.com and confirm.
+
+However there is one issue. Everytime you push, you need to supply your username and password. Providing password everytime is important for security but entering username everytime is wastage of time. Remember, we can configure it. Lets configure git username globally.
+
+```
+git config --global user.name "kapilsharma"
+git config --global user.email "kapil@kapilsharma.info"
+```
