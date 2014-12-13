@@ -43,18 +43,81 @@ vim readme.md
 
 We have our first file so lets commit it
 
+Its good to check status initially
+
+ ```
+ git status
+ # On branch master
+ #
+ # Initial commit
+ #
+ # Untracked files:
+ #   (use "git add <file>..." to include in what will be committed)
+ #
+ #       readme.md
+ nothing added to commit but untracked files present (use "git add" to track)
 ```
- -- Its good to check status initially
- git status
 
- -- Mark file to commit
+Mark file to commit
+
+```
  git add readme.md
+```
 
- -- Check status again
+Check status again.
+
+```
  git status
+ # On branch master
+ #
+ # Initial commit
+ #
+ # Changes to be committed:
+ #   (use "git rm --cached <file>..." to unstage)
+ #
+ #       new file:   readme.md
+ #
+```
 
- -- Now we are ready to commit
+Files listed under `Changes to be committed` means files are staged and ready to be committed.
+
+Now we are ready to commit
+
+```
  git commit -m "First commit"
 ```
 
-Great, we have our first commit. However if you remember from presentation, Git
+Great, we have our first commit. Check status again and there will be no thing to commit.
+
+```
+git status
+# On branch master
+nothing to commit, working directory clean
+```
+
+If you remember from presentation, Git manage everything locally so even after commit, our files are not present on the server. To send them on the server, we must push local changes.
+
+However there is another problem, our local git do not know about server. For this, we have to add remote. This is one time process. Check the repository url on github. It must be like `https://github.com/<username>/workingwithgit.git`. So lets add remote:
+
+```
+git remote add origin https://github.com/kapilsharma/workingwithgit.git
+```
+
+Here `origin` in default server.
+
+Now lets push our commit to the server
+
+```
+git push origin master
+Username for 'https://github.com': kapilsharma
+Password for 'https://kapilsharma@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.19 KiB, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kapilsharma/workingwithgit.git
+ * [new branch]      master -> master
+```
+
+Great, your readme.md file sent on the server. Please go to github.com and confirm.
