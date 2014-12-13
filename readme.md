@@ -122,9 +122,21 @@ To https://github.com/kapilsharma/workingwithgit.git
 
 Great, your readme.md file sent on the server. Please go to github.com and confirm.
 
-However there is one issue. Everytime you push, you need to supply your username and password. Providing password everytime is important for security but entering username everytime is wastage of time. Remember, we can configure it. Lets configure git username globally.
+Remember, we should configure name and email. Lets configure name and email globally.
 
 ```
 git config --global user.name "kapilsharma"
 git config --global user.email "kapil@kapilsharma.info"
 ```
+
+# All set
+
+Now the project is all set for coding. We have:
+
+* A central repository on Github.
+* A local project created.
+* Project can be pushed to repository on Github.
+
+Next step is to start coding. Although we are not making any real project in `Working with git` workshop, we will add some files and assum they are our real project files.
+
+Next Step: [Setup project locally](setupproject.md)
