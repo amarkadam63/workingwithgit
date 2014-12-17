@@ -1,6 +1,6 @@
 # Working with git
 
-This repo has been created as example repository for 'Working with Git' workshop hosted by Kapil Sharma and Ramesh Dahiya and sponsored by GraciousSoft and GitHub.
+This repo has been created as example repository for 'Working with Git' workshop hosted by PHP Reboot. Speakers are Kapil Sharma and Ramesh Dahiya and sponsored by GraciousSoft and GitHub.
 
 This include list of commands we are supposed to run during workshop
 
@@ -32,7 +32,7 @@ git init
 touch readme.md
 vim readme.md
 ```
-* Please note `.md` represent markdown files, which is easy markup for documentation and unlike documents created in office softwares, can be in version control system. For now, just add few simple lines as follow:
+* Please note `.md` represent markdown files, which is easy markup for documentation and unlike documents created in office softwares, can be in version controlled in SCM. For now, just add few simple lines as follow:
 ```
  # Working with Git workshop
 
